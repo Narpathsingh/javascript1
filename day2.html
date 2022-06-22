@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 2</title>
+</head>
+<body>
+    <h1>Welcome to JavaScript</h1>
+</body>
+
+<script>
+    // All script in console
+// data types
+// primitive data types are number,booleans,null,undefined,strings,symbols // immutable (non-modifiable)
+// non primitive datatypes objects,Arrays
+
+// strings
+let word = 'JavaScript'
+
+let numOne = 3
+let numTwo = 5
+console.log(numOne == numTwo)
+
+let one = 3
+let two = 3
+console.log(one == two)
+
+// Array define compare (mutable) , non-primitive
+let num = [1,2,3,4,5,6]
+console.log(num)
+
+// comparing
+let num1 = [1,2,3,4]
+let number = num1;
+console.log(num1 == number)
+
+// changing an array 
+num[0] = 10
+console.log(num)
+
+// numbers(declaring , comparing , Math object random number generator)
+// two way to declare
+let age = 21
+console.log(age)
+// const is used if you dont want to change value
+let gravity = 9.8;
+console.log(gravity)
+
+// using Math object
+const PI = Math.PI
+console.log(PI)
+
+// Math values
+console.log(Math.round(PI))
+console.log(Math.round(9.81))
+console.log(Math.floor(PI))
+console.log(Math.ceil(PI))
+
+// min an max in Math
+console.log(Math.min(2,4,1,-1,0))
+console.log(Math.max(2,5,6,1,-6))
+
+// random from 0 to 10
+let random1 = Math.random() * 10
+console.log(random1)
+
+// math.floor(no float value in random number)
+let floor = Math.floor(Math.random() * 10)
+console.log(floor) 
+
+//math square root , power , log
+console.log(Math.sqrt(100))
+console.log(Math.pow(3,2))
+console.log(Math.log(2))
+
+// generate random number using Math 
+let random = Math.random()  //random from 0 to 0.999999
+console.log(random) 
+
+// strings 
+let name = 'Narpath'
+console.log(name)
+
+// long string literals
+let note  = "This is used to test the long\
+string literals, it can have has much \
+line in it."
+console.log(note)
+
+// escape sequence
+let one1 = "This is code inspired from 30daysofjavascript \n Thank you!"
+console.log(one1)
+console.log("Days1\tTopics\tExercise")
+
+// string literals
+console.log(`My name ${name} and i am ${age} old`)
+let a  = 3
+let b = 2
+console.log(`${a} is greater than ${b}: ${a>b}`)
+
+// string methods 
+let firstName = "Narpath"
+let secondName = "singh"
+let fullName = firstName + " " + secondName
+console.log(fullName)
+
+// 
+let js = "javaScript"
+let split = "30 days of JavaScript"
+console.log(js.length)
+console.log(js[0])
+console.log(js.toUpperCase())
+console.log(js.toLowerCase())
+console.log(js.substr(4,6))
+console.log(js.substring(0,4))
+console.log(split.split())
+console.log(split.split(" "))
+console.log(js.includes('java'))
+console.log(split.replace("JavaScript","python"))
+console.log(js.charAt(5))
+console.log(js.charCodeAt(5))
+console.log(js.indexOf("S"))
+console.log(js.lastIndexOf("t"))
+console.log(firstName + " " + secondName)
+console.log(split.startsWith("30"))
+console.log(split.endsWith("JavaScript"))
+console.log(split.search("days"))
+console.log(js.repeat(5))
+
+// typeof
+let job
+console.log(typeof javascript)
+console.log(typeof 2)
+console.log(typeof true)
+console.log(typeof job)
+console.log(typeof null)
+
+// type casting (data type)
+// string to int 
+let num2 = "10"
+console.log(num2)
+let convert = parseInt(num2)
+let convert1 = Number(num2)
+let convert2  = +num2
+console.log(convert)
+console.log(convert1)
+console.log(convert2)
+
+//string to float
+let num3 = '9.8'
+console.log(num3)
+let float = parseFloat(num3)
+let float1 = Number(num3)
+let float2 = +num3
+console.log(float)
+
+// float to int 
+let float4 = 9.8
+let floatToInt = parseInt(float4)
+console.log(floatToInt)
+</script>
+</html>
