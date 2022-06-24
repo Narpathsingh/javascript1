@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 3</title>
+    <style>
+        p {
+            font-size: 21px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to JavaScript</h1>
+    <button onclick="alert('Welcome')">Click Me!</button>
+    <p id="time"></p>
+</body>
+    <script>
+        // booleans value either true or false
+            let lightIsON = true;
+            console.log(lightIsON)
+            let compare = (4 > 3)
+            console.log(compare)
+
+        //undefined and null
+        let name
+        console.log(name)
+        let name1 = null
+        console.log(name1)
+
+        // arithmetic operators
+        let numOne = 8
+        let numTwo = 4 
+        console.log(numOne + numTwo)
+        console.log(numOne - numTwo)
+        console.log(numOne * numTwo)
+        console.log(numOne / numTwo)
+        console.log(numOne % numTwo)
+        console.log(numOne ** numTwo)
+    // same line
+    console.log(numOne + numTwo, numOne - numTwo, numOne * numTwo, numOne / numTwo, numOne % numTwo, numOne ** numTwo)
+
+    const PI = 3.14
+    let radius = 100
+    console.log(PI * radius * radius)
+
+        // comparison operator
+        console.log(3 > 2)
+        console.log(3 >= 3)
+        console.log(4 < 2)
+        console.log(4 < 5)
+        console.log(4 == 2)//true
+        console.log(4 === 4) //true
+        console.log(NaN == NaN)
+        console.log('mango'.length == 'avacode'.length)
+        console.log('tomato'.length == 'potato'.length)
+
+
+        // logical operators
+        // and , pipe and negations operator
+        // and operator
+        console.log(4 > 3 && 10 < 11)
+        console.log(4 > 3 && 10 > 12) //both condition true it is true
+
+        // pipe operator
+        console.log(4 > 3 || 10 > 12)
+        console.log(4 > 3 || 10 < 11) //any one condition should be true
+
+        // negation operator !
+        console.log(4 < 3) //it is true but it return false
+
+        // increment operator in js we have to type of increment it could be pre and post increment
+        let count = 0
+        console.log(++count) //1
+        console.log(count) //  1  pre-increment
+        console.log(count++) //0 because previous count value became one
+        console.log(count) // 2   post increment
+
+        // decrement operator in js , pre-decrement and post-decrement
+        let count1 = 0
+        console.log(--count1)  // -1
+        console.log(count1) // -1
+        console.log(count1--) // 0
+        console.log(count1) // -1
+
+        // ternary opertor
+        let number = 5
+        number > 0
+        ? console.log(`${number} is a positive number`)
+        : console.log(`${number} is a negative number`)
+        number = -5
+
+        number > 0
+        ? console.log(`${number} is a postive number`)
+        : console.log(`${number} is a negative number`)
+
+        // windows method
+        //uncomment down value 
+        // prompt("Name","please enter your name") 
+
+        // confirm('Are you sure you want to delete your data?')
+
+        // Date object
+        const now = new Date()
+        console.log(now) //todays date
+        console.log(now.getMonth() + 1)
+        console.log(now.getDate())
+        console.log(now.getDay())
+        console.log(now.getHours())
+        console.log(now.getMinutes())
+        console.log(now.getSeconds())
+        console.log(now.getMilliseconds())
+        console.log(now.getTime())
+
+
+        // time exercise
+        let date1 = new Date()
+        let date2 = `${date1.getHours()} : ${date1.getMinutes()} : ${date1.getSeconds()}`
+        let time1 =  document.getElementById('time').innerHTML = "Time: " + date2
+      
+</script>
+</html>
