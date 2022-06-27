@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 4</title>
+</head>
+<body>
+    <h1>Welcome to JavaScript</h1>
+</body>
+<script>
+    let num = 4
+    if (num > 3){
+        console.log("the number is greater than 3")
+    }
+//if
+    let isRaining = true
+        if(isRaining) {
+        console.log("You need  a rain coat");
+    }
+
+    //  else if
+    let isRain = false
+        if(isRain) {
+        console.log("You need  a rain coat");
+    }else{
+        console.log("no need of rain coat");
+    }
+
+    let num1 = 3
+    if(num > 0){
+        console.log("the number is positive number");
+    }else{
+        console.log("the number is negative number");
+    }
+
+    //else if condition
+    let a = 0
+    if(a>0){
+        console.log("The number is positive number");
+    }else if(a<0){
+        console.log("The number is negative nubmer");
+    }else if(a==0){
+        console.log("The number is zero");
+    }else{
+        console.log("It is not a number");
+    }
+
+
+    let wheather = "sunny"
+    if(wheather == "sunny"){
+        console.log("you can play outside");
+    }else if(wheather == "rainy"){
+        console.log("you can't play outside");
+    }else if(wheather == "cloudy"){
+        console.log("were jacket and go to play");
+    }else{
+        console.log("you play inside home");
+    }
+
+
+    //switch case
+    let season = "summer"
+    switch(season){
+        case 'summer':
+            console.log("The schools are closed") 
+            break;
+        case "rainy":
+            console.log("You need a raincoat and have to go to school");
+            break;
+        case "winter":
+            console.log("you need a jacket");
+            break;
+        default:
+            console.log("you need to go to school");
+        }   
+
+        // capital input , take input
+    let userInput = prompt("Day")
+    day = userInput.toLowerCase()
+        switch(userInput){
+            case 'monday':
+                console.log("Today is Monday");
+                break;
+            case "tuesday":
+                console.log("Today is Tuesday");
+                break;
+            case "wednesday":
+                console.log("Today is Wednesday");
+                break;
+            case "thursday":
+                console.log("Today is Wednesday");
+                break;
+            case "friday":
+                console.log("Today is Wednesday");
+                break;
+            case "saturday":
+                console.log("Today is Wednesday");
+                break;
+            case "sunday":
+                console.log("Today is Wednesday");
+                break;
+            default:
+                console.log("It's not a week day");
+        }
+        //take input
+        let num2 = prompt("enter a number")
+ 
+        switch (true){
+            case (num2 > 0):
+                console.log("It is a positive number");
+                break;
+            case (num2 < 0):
+                console.log("It is a positive number");
+                break;
+            case (num2 == 0):
+                console.log("It is a positive number");
+                break;
+            default:
+                console.log("you not entered a number");
+        }
+
+        // ternary opertor
+       let Num = false
+       Num
+       ? console.log("It is a positive number")
+       : console.log("It is a negative number")
+</script>
+</html>
